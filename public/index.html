@@ -32,6 +32,8 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
@@ -59,7 +61,7 @@
         <form method="POST" action="/tweets/">
           <div class="textArea">
             <label for="tweet-text">What are you humming about?</label>
-            <textarea name="text" id="tweet-text"></textarea>
+            <input name="text" id="tweet-text"></input>
           </div>
           <div class="tweetCount">
             <button class="tweet-button" type="submit">Tweet</button>
@@ -67,6 +69,20 @@
           </div>
         </form>
       </section>
+      <div>
+      <header>
+      <img src="https://i.imgur.com/73hZDYK.png">
+      <p>Rhoda Jacobs</p>
+      <p>@MrsJacosbs</p>
+      </header>
+      <div>
+        <input name="text" id="tweet-text"></input>
+
+      </div>
+      <footer>
+
+      </footer>
+      </div>
     </main>
   </body>
 </html>

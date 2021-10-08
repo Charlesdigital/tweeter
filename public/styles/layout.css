@@ -30,6 +30,8 @@ min-width:100%;
 
 #tweet-text {
 background-color: #f4f1ec;
+font-family: 'Source Sans Pro';
+font-weight: bold;
 }
 
 .tweet-button {
@@ -46,6 +48,8 @@ background-color: #f4f1ec;
   margin: 0;
   padding: 0;
   border-bottom: 5px solid #545149;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
 
 }
 
@@ -54,10 +58,12 @@ background-color: #f4f1ec;
   display: flex;
   justify-content: space-between;
   font-family: 'Source Sans Pro';
-
-
 }
 
+.counter {
+  font-family: 'Bungee';
+  font-weight: bold;
+}
 /*
  * Global layout stuff
  */
