@@ -29,11 +29,19 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
   </head>
 
   <body>
@@ -58,10 +66,10 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form method="POST" action="/tweets/">
+        <form id="tweetForm" method="POST" action="/tweets">
           <div class="textArea">
             <label for="tweet-text">What are you humming about?</label>
-            <input name="text" id="tweet-text"></input>
+            <textarea name="text" id="tweet-text"></textarea>
           </div>
           <div class="tweetCount">
             <button class="tweet-button" type="submit">Tweet</button>
@@ -69,20 +77,11 @@
           </div>
         </form>
       </section>
-      <div>
-      <header>
-      <img src="https://i.imgur.com/73hZDYK.png">
-      <p>Rhoda Jacobs</p>
-      <p>@MrsJacosbs</p>
-      </header>
-      <div>
-        <input name="text" id="tweet-text"></input>
-
-      </div>
-      <footer>
-
-      </footer>
-      </div>
+      <!------------------------------------------------------------ Tweet Container-->
+      <section id="tweets-container"></section>
+      <!----------------------------------------------------------------------------------->
     </main>
   </body>
 </html>
+
+<!-- timeago.format(new Date());             //=> "just now" -->

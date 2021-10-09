@@ -5,6 +5,9 @@ nav {
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
   }
 
   .navButton {
@@ -22,8 +25,9 @@ nav {
   }
 
   body {
-    background-color: #f4f1ec;
-background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+  background-color: #f4f1ec;
+  background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+  padding-top: 150px;
   }
 
   nav > span {
