@@ -17,7 +17,16 @@ $(document).ready(function () {
     } else if (textLength > 140) {
       alert("Character limit is 140");
     } else {
-      $.post("http:/tweets", formData, () => {});
+      $.post("http:/tweets", formData, (response) => {
+        //Get the last tweet
+        $.ajax("/tweets", { method: "GET", dataType: "json" }).then(function (
+          results
+        ) {
+          console.log("tweet: ", results[results.length - 1]);
+          const lastTweet = createTweetElement(results[results.length - 1]);
+          $("#tweets-container").append(lastTweet);
+        });
+      });
     }
   });
 
