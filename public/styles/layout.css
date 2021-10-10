@@ -36,9 +36,8 @@ font-weight: bold;
 border: 0px;
 }
 
-.tweet-button {
+#tweet-button {
   font-family: 'Bungee';
-
   background:#4056A1;
   color: #f4f1ec;
 
@@ -120,6 +119,22 @@ margin-right: 25px;
 .fas:hover {
   color: orange;
 }
+
+.errorBox {
+  border: 3px solid red;
+  color: red;
+  text-align: center;
+}
+
+.tweet {
+margin: 20px;
+}
+
+.errorBox {
+  margin-bottom: 50px;
+  padding: 5px;
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
