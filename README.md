@@ -19,3 +19,6 @@ This repository is the starter code for the project: Students will fork and clon
 ## Completed Project Screenshot
 
 ![](docs/frontend.png)
+
+
+![](docs/demo.mp4)
