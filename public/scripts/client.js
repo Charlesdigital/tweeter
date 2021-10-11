@@ -59,16 +59,14 @@ $(document).ready(function () {
     return $tweet;
   }
 
+  //Loops through tweets, creates new element article and appends it
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $("#tweets-container").append($tweet);
     }
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
   };
-
+  //Get array of tweets to render them
   function loadTweets() {
     $.ajax("/tweets", { method: "GET", dataType: "json" }).then(function (
       results
@@ -79,13 +77,4 @@ $(document).ready(function () {
   }
 
   loadTweets();
-
-  //Loop through the array of data objects and display a new tweet article
 });
-
-// to add it to the page so we can make sure it's got all the right elements, classes, etc.
-
-//$(document).ready(function () { include it, wait for the html to load
-//prepend to add at the top
-
-/* const $tweet = $(`<article class="tweet">${tweetData.user.name}</article>`); */

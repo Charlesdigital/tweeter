@@ -4,8 +4,6 @@
  * Do not modify these two selectors, please
  */
 
-
-
 html {
   box-sizing: border-box;
 }
@@ -22,14 +20,14 @@ html {
 }
 
 .new-tweet {
-min-width:100%;
+  min-width:100%;
 }
 
 #tweet-text {
-background-color: #f4f1ec;
-font-family: 'Source Sans Pro';
-font-weight: bold;
-border: 0px;
+  background-color: #f4f1ec;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  border: 0px;
 }
 
 #tweet-button {
@@ -43,11 +41,6 @@ border: 0px;
 .avatar {
   background-color: #d89820;
   background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
-  display: flex;
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  /* padding: 100px; */
 }
 
 .textArea {
@@ -89,18 +82,18 @@ body {
   margin-right: 25px;
 }
 article.tweet {
-border: 4px solid #545149;
-padding: 20px;
-margin-bottom: 40px;
+  border: 4px solid #545149;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 article.tweet:hover {
-box-shadow: 5px 10px #888888
+  box-shadow: 5px 10px #888888
 }
 
 article.tweet header {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .headerLeft {
@@ -108,13 +101,13 @@ justify-content: space-between;
 }
 
 #name {
-color: white;
-font-family: 'Source Sans Pro';
-margin-top: 20px;
+  color: white;
+  font-family: 'Source Sans Pro';
+  margin-top: 20px;
 }
 
 .headerLeft img {
-margin-right: 25px;
+  margin-right: 25px;
 }
 
 .articleFooter {
@@ -178,8 +171,8 @@ margin-right: 25px;
   }
 
   body nav {
-  background-color:#4056A1;
-  background-image: none;
+    background-color:#4056A1;
+    background-image: none;
   }
 
   .avatarName {
@@ -196,6 +189,3 @@ margin-right: 25px;
   }
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */

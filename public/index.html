@@ -53,6 +53,7 @@
         <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
+    <!-- Avatar and Name-->
     <div id="main-container">
       <header class="avatar">
         <div class="avatarName">
@@ -60,18 +61,16 @@
           <span id="name"><b>Charles</b> Easton</span>
         </div>
       </header>
-
       <!-- Page-specific (main) content here -->
-
       <main class="container">
         <div class="errorBox"></div>
-
         <section class="new-tweet">
           <form id="tweetForm" method="POST" action="/tweets">
             <div class="textArea">
               <label for="tweet-text">What are you humming about?</label>
               <textarea rows="1" name="text" id="tweet-text"></textarea>
             </div>
+            <!-- User insert tweets here-->
             <div class="tweetCount">
               <button id="tweet-button" type="submit">Tweet</button>
               <output name="counter" class="counter" for="tweet-text"
@@ -80,12 +79,9 @@
             </div>
           </form>
         </section>
-        <!------------------------------------------------ Where tweet articles get displayed -->
+        <!-- Tweet articles get displayed here-->
         <section id="tweets-container"></section>
-        <!----------------------------------------------------------------------------------->
       </main>
     </div>
   </body>
 </html>
-
-<!-- timeago.format(new Date());             //=> "just now" -->

@@ -1,15 +1,13 @@
-
 nav {
-    height: 100px;
-    /* background-color: transparent; */
+  height: 100px;
   background-color: #d89820;
   background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
   }
 
   .navButton {
@@ -47,7 +45,3 @@ nav {
     justify-content: center;
   }
 
-
-
-
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
