@@ -53,35 +53,38 @@
         <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
-    <header>
-      <div class="avatar">
-        <img src="/images/profile-hex.png" />
-      </div>
-      <br />
-      <div>
-        <h2 class="avatar">Charles Easton</h2>
-      </div>
-      <div class="errorBox"></div>
-    </header>
+    <div id="main-container">
+      <header class="avatar">
+        <div class="avatarName">
+          <img src="/images/profile-hex.png" />
+          <span id="name"><b>Charles</b> Easton</span>
+        </div>
+      </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <form id="tweetForm" method="POST" action="/tweets">
-          <div class="textArea">
-            <label for="tweet-text">What are you humming about?</label>
-            <textarea rows="1" name="text" id="tweet-text"></textarea>
-          </div>
-          <div class="tweetCount">
-            <button id="tweet-button" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <!------------------------------------------------------------ Tweet Container-->
-      <section id="tweets-container"></section>
-      <!----------------------------------------------------------------------------------->
-    </main>
+      <!-- Page-specific (main) content here -->
+
+      <main class="container">
+        <div class="errorBox"></div>
+
+        <section class="new-tweet">
+          <form id="tweetForm" method="POST" action="/tweets">
+            <div class="textArea">
+              <label for="tweet-text">What are you humming about?</label>
+              <textarea rows="1" name="text" id="tweet-text"></textarea>
+            </div>
+            <div class="tweetCount">
+              <button id="tweet-button" type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"
+                >140</output
+              >
+            </div>
+          </form>
+        </section>
+        <!------------------------------------------------ Where tweet articles get displayed -->
+        <section id="tweets-container"></section>
+        <!----------------------------------------------------------------------------------->
+      </main>
+    </div>
   </body>
 </html>
 

@@ -4,9 +4,7 @@
  * Do not modify these two selectors, please
  */
 
-* {
- /* border: 1px solid green; */
-}
+
 
 html {
   box-sizing: border-box;
@@ -17,12 +15,10 @@ html {
 
 .container {
   width: 90%;
-  /* border: 1px solid red; */
-  margin: auto;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .new-tweet {
@@ -40,7 +36,18 @@ border: 0px;
   font-family: 'Bungee';
   background:#4056A1;
   color: #f4f1ec;
+  font-size: 20px;
+  margin-top: 12px;
+}
 
+.avatar {
+  background-color: #d89820;
+  background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* padding: 100px; */
 }
 
 .textArea {
@@ -51,9 +58,7 @@ border: 0px;
   border-bottom: 5px solid #545149;
   font-family: 'Source Sans Pro';
   font-weight: bold;
-
 }
-
 
 .tweetCount {
   display: flex;
@@ -77,17 +82,20 @@ body {
 }
 
 #tweets-container {
-  margin: 100px;
+  margin-top: 50px;
 }
 
+#tweetForm {
+  margin-right: 25px;
+}
 article.tweet {
 border: 4px solid #545149;
 padding: 20px;
+margin-bottom: 40px;
 }
 
 article.tweet:hover {
 box-shadow: 5px 10px #888888
-
 }
 
 article.tweet header {
@@ -97,6 +105,12 @@ justify-content: space-between;
 
 .headerLeft {
   display: flex;
+}
+
+#name {
+color: white;
+font-family: 'Source Sans Pro';
+margin-top: 20px;
 }
 
 .headerLeft img {
@@ -109,7 +123,7 @@ margin-right: 25px;
 }
 
 .icons {
-  margin-top: 34px;
+  margin-top: 25px;
 }
 
 .fas {
@@ -120,6 +134,13 @@ margin-right: 25px;
   color: orange;
 }
 
+.fa-angle-double-down {
+  size: 10px;
+}
+
+.line {
+ border: 2px solid #545149;
+}
 .errorBox {
   border: 3px solid red;
   color: red;
@@ -127,14 +148,53 @@ margin-right: 25px;
 }
 
 .tweet {
-margin: 20px;
+  margin: 20px;
 }
 
 .errorBox {
   margin-bottom: 50px;
   padding: 5px;
 }
+.handle {
+  color: lightblue;
+}
+@media only screen and (min-width: 768px) {
+  #main-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
 
+  }
+
+  #main-container > header  {
+    flex: 1;
+    margin: 10px;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  body nav {
+  background-color:#4056A1;
+  background-image: none;
+  }
+
+  .avatarName {
+    margin: 100px;
+    width: 100%;
+    height: 500px;
+    max-width: 700px;
+    background-color: #d89820;
+    background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

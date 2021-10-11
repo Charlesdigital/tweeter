@@ -1,7 +1,9 @@
 
 nav {
-    height: 120px;
-    background-color:#4056A1;
+    height: 100px;
+    /* background-color: transparent; */
+  background-color: #d89820;
+  background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
@@ -27,16 +29,17 @@ nav {
   body {
   background-color: #f4f1ec;
   background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
-  padding-top: 150px;
+  padding-top: 120px;
   }
 
   nav > span {
-  margin: 1.5em;
+  margin-top: 28px;
+  margin-left: 20px;
 
   }
 .logo  {
   font-family: 'Bungee', cursive;
-
+  font-size: 30px;
   }
 
   .avatar {

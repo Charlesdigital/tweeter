@@ -9,21 +9,20 @@ $(document).ready(function () {
   $(".errorBox").hide();
   $("#tweetForm").submit(function (event) {
     event.preventDefault();
+
     const formData = $("#tweetForm").serialize();
-    console.log(formData);
     const textLength = $("#tweet-text").val().length;
-    console.log(textLength);
+
     if (textLength === 0) {
       $(".errorBox").text("Character must be greater than 0").slideDown();
     } else if (textLength > 140) {
       $(".errorBox").text("Character limit is 140").slideDown();
     } else {
       $.post("http:/tweets", formData, (response) => {
-        //Get the last tweet
+        //Gets the last tweet and adds it to the page
         $.ajax("/tweets", { method: "GET", dataType: "json" }).then(function (
           results
         ) {
-          console.log("tweet: ", results[results.length - 1]);
           const lastTweet = createTweetElement(results[results.length - 1]);
           $("#tweets-container").prepend(lastTweet);
         });
@@ -40,10 +39,11 @@ $(document).ready(function () {
     <img src = "${tweet.user.avatars}">
     <p>${tweet.user.name}</p>
     </div>
-    <p>${tweet.user.handle}</p>
+    <p class="handle">${tweet.user.handle}</p>
     </header>
     <div>
     <p>${tweet.content.text}</p>
+    <div class ="line"></div>
     </div>
     <footer class = "articleFooter">
     <p>${timeago.format(tweet.created_at)}</p>
