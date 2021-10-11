@@ -63,9 +63,6 @@ html {
   font-family: 'Bungee';
   font-weight: bold;
 }
-/*
- * Global layout stuff
- */
 
 body {
   color: #545149;
@@ -74,26 +71,8 @@ body {
   font-family:'Source Sans Pro', sans-serif;
 }
 
-#tweets-container {
-  margin-top: 50px;
-}
-
 #tweetForm {
   margin-right: 25px;
-}
-article.tweet {
-  border: 4px solid #545149;
-  padding: 20px;
-  margin-bottom: 40px;
-}
-
-article.tweet:hover {
-  box-shadow: 5px 10px #888888
-}
-
-article.tweet header {
-  display: flex;
-  justify-content: space-between;
 }
 
 .headerLeft {
@@ -110,30 +89,6 @@ article.tweet header {
   margin-right: 25px;
 }
 
-.articleFooter {
-  display: flex;
-  justify-content: space-between;
-}
-
-.icons {
-  margin-top: 25px;
-}
-
-.fas {
-  color: #4C568C;
-}
-
-.fas:hover {
-  color: orange;
-}
-
-.fa-angle-double-down {
-  size: 10px;
-}
-
-.line {
- border: 2px solid #545149;
-}
 .errorBox {
   border: 3px solid red;
   color: red;
@@ -148,15 +103,16 @@ article.tweet header {
   margin-bottom: 50px;
   padding: 5px;
 }
+
 .handle {
   color: lightblue;
 }
+
 @media only screen and (min-width: 768px) {
   #main-container {
     display: flex;
     flex-direction: row;
     margin-top: 100px;
-
   }
 
   #main-container > header  {

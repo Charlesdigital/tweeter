@@ -8,40 +8,42 @@ nav {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  }
+}
 
-  .navButton {
+.navButton {
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-right: 1.5em;
+}
 
-  }
+.navButton i {
+  color:red;
+  font-size: 1.3em;
+}
 
-  .navButton i {
-    color:red;
-    font-size: 1.3em;
-  }
-
-  body {
+body {
   background-color: #f4f1ec;
   background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
   padding-top: 120px;
-  }
+}
 
-  nav > span {
+nav > span {
   margin-top: 28px;
   margin-left: 20px;
+}
 
-  }
-.logo  {
+.logo {
   font-family: 'Bungee', cursive;
   font-size: 30px;
-  }
+}
 
-  .avatar {
-    display: flex;
-    justify-content: center;
-  }
+.avatar {
+  display: flex;
+  justify-content: center;
+}
 
+.fa-angle-double-down {
+  size: 10px;
+}
