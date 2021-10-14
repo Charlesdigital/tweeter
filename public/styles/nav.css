@@ -26,7 +26,7 @@ nav {
 body {
   background-color: #f4f1ec;
   background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
-  padding-top: 120px;
+  /* padding-top: 120px; */
 }
 
 nav > span {

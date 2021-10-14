@@ -23,6 +23,8 @@ $(document).ready(function () {
         $.ajax("/tweets", { method: "GET", dataType: "json" }).then(function (
           results
         ) {
+          $("textArea").val("");
+          $(".counter").val(140);
           const lastTweet = createTweetElement(results[results.length - 1]);
           $("#tweets-container").prepend(lastTweet);
         });
@@ -42,7 +44,7 @@ $(document).ready(function () {
     <p class="handle">${tweet.user.handle}</p>
     </header>
     <div>
-    <p>${tweet.content.text}</p>
+    <p class = "tweet-content">${tweet.content.text}</p>
     <div class ="line"></div>
     </div>
     <footer class = "articleFooter">
@@ -53,8 +55,7 @@ $(document).ready(function () {
     <i class="fas fa-heart"></i>
     </div>
     </footer>
-    </article>
-    `);
+    </article>`);
 
     return $tweet;
   }
@@ -63,7 +64,7 @@ $(document).ready(function () {
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $("#tweets-container").append($tweet);
+      $("#tweets-container").prepend($tweet);
     }
   };
   //Get array of tweets to render them
