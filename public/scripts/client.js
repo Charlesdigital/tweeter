@@ -33,6 +33,7 @@ $(document).ready(function () {
     }
   });
 
+  //creates new tweet box
   function createTweetElement(tweet) {
     const $tweet = $(`
     <article class ="tweet">
@@ -56,7 +57,6 @@ $(document).ready(function () {
     </div>
     </footer>
     </article>`);
-
     return $tweet;
   }
 
