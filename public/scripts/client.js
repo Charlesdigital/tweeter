@@ -78,4 +78,35 @@ $(document).ready(function () {
   }
 
   loadTweets();
+
+  const tweetBox = $(`
+  <div class="errorBox"></div>
+  <section class="new-tweet">
+    <form id="tweetForm" method="POST" action="/tweets">
+      <div class="textArea">
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea rows="1" name="text" id="tweet-text"></textarea>
+      </div>
+      <!-- User insert tweets here-->
+      <div class="tweetCount">
+        <button id="tweet-button" type="submit">Tweet</button>
+        <output name="counter" class="counter" for="tweet-text"
+          >140</output
+        >
+      </div>
+    </form>
+  </section>
+  <!-- Tweet articles get displayed here-->
+  <section id="tweets-container"></section>
+`);
+
+  $(".toggle").on("click", function () {
+    const $section = $(".new-tweet");
+
+    if ($section.is(":visible")) {
+      $section.slideUp("fast");
+    } else {
+      $section.slideDown("fast");
+    }
+  });
 });

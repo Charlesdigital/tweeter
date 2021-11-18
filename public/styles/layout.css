@@ -7,7 +7,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -20,19 +22,21 @@ html {
 }
 
 .new-tweet {
-  min-width:100%;
+  min-width: 100%;
+  /* visibility: hidden; */
+  display: none;
 }
 
 #tweet-text {
   background-color: #f4f1ec;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-weight: bold;
   border: 0px;
 }
 
 #tweet-button {
-  font-family: 'Bungee';
-  background:#4056A1;
+  font-family: "Bungee";
+  background: #4056a1;
   color: #f4f1ec;
   font-size: 20px;
   margin-top: 12px;
@@ -50,18 +54,18 @@ html {
   margin: 0;
   padding: 0;
   border-bottom: 5px solid #545149;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-weight: bold;
 }
 
 .tweetCount {
   display: flex;
   justify-content: space-between;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
 }
 
 .counter {
-  font-family: 'Bungee';
+  font-family: "Bungee";
   font-weight: bold;
 }
 
@@ -69,7 +73,7 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family:'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #tweetForm {
@@ -82,7 +86,7 @@ body {
 
 #name {
   color: white;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   margin-top: 20px;
 }
 
@@ -131,7 +135,7 @@ textarea {
     margin-top: 100px;
   }
 
-  #main-container > header  {
+  #main-container > header {
     flex: 1;
     margin: 10px;
     background-color: transparent;
@@ -143,7 +147,7 @@ textarea {
   }
 
   body nav {
-    background-color:#4056A1;
+    background-color: #4056a1;
     background-image: none;
   }
 
@@ -158,5 +162,7 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
-  body {padding-top: 100px}
+  body {
+    padding-top: 100px;
+  }
 }
