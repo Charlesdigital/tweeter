@@ -100,6 +100,7 @@ $(document).ready(function () {
   <section id="tweets-container"></section>
 `);
 
+  //Toggles tweet box up and down
   $(".toggle").on("click", function () {
     const $section = $(".new-tweet");
 
