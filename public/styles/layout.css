@@ -23,7 +23,6 @@ html {
 
 .new-tweet {
   min-width: 100%;
-  /* visibility: hidden; */
   display: none;
 }
 
