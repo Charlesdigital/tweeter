@@ -24,6 +24,7 @@ Features:
 2. Write a new tweet on click displays a tweet box with a limit of 140 characters.
 3. On tweet button submit displays a new tweet with user and timestamp.
 4. On scroll displays a red button to scroll back to the top of the page.
-   ![](docs/tweeterdemo.gif)
+
+![](docs/tweeterdemo.gif)
 
 ![](docs/frontend.png)
