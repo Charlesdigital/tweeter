@@ -4,5 +4,8 @@ $(function () {
   });
   $(".scrollUp").click(function () {
     $(window).scrollTop(0);
+    $(window).scroll(function () {
+      $(".scrollUp").css("display", "none");
+    });
   });
 });
